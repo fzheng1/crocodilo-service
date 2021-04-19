@@ -1,0 +1,24 @@
+{
+  "name": "crocodilo-service",
+  "version": "1.0.0",
+  "description": "service for crocodilo-bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fzheng1/crocodilo-service.git"
+  },
+  "author": "Franklin Zheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fzheng1/crocodilo-service/issues"
+  },
+  "homepage": "https://github.com/fzheng1/crocodilo-service#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.6.0"
+  }
+}
