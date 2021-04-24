@@ -25,6 +25,7 @@ CREATE TABLE accounts(
     player_id integer NOT NULL,
     summoner_name character varying(200) NOT NULL,
     riot_account_id character varying(200) NOT NULL,
+    subscribers text[],
     CONSTRAINT fk_player_id FOREIGN KEY (player_id) REFERENCES players (id)
 );
 
