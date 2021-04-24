@@ -4,7 +4,7 @@ CREATE DATABASE crocodiloDB;
 
 CREATE TABLE players(
     id SERIAL PRIMARY KEY,
-    discord_id character varying(200) NOT NULL
+    discord_id VARCHAR(200) NOT NULL
 );
 
 CREATE TABLE guilds(
@@ -23,8 +23,8 @@ CREATE TABLE portfolios(
 CREATE TABLE accounts(
     id SERIAL PRIMARY KEY,
     player_id integer NOT NULL,
-    summoner_name character varying(200) NOT NULL,
-    riot_account_id character varying(200) NOT NULL,
+    summoner_name VARCHAR(200) NOT NULL,
+    riot_account_id VARCHAR(200) NOT NULL,
     subscribers text[],
     CONSTRAINT fk_player_id FOREIGN KEY (player_id) REFERENCES players (id)
 );
