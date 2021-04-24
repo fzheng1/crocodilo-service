@@ -14,7 +14,7 @@ CREATE TABLE guilds(
 CREATE TABLE portfolios(
     player_id integer NOT NULL,
     guild_id integer NOT NULL,
-    shares integer,
+    croc_koins integer,
     PRIMARY KEY (player_id, guild_id),
     CONSTRAINT fk_player_id FOREIGN KEY (player_id) REFERENCES players (id),
     CONSTRAINT fk_guild_id FOREIGN KEY (guild_id) REFERENCES guilds (id)
