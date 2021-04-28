@@ -13,7 +13,7 @@ var _express = _interopRequireDefault(require("express"));
 
 var _cookieParser = _interopRequireDefault(require("cookie-parser"));
 
-var _index = _interopRequireDefault(require("./routes/index"));
+var _index = _interopRequireDefault(require("./routes/index.js"));
 
 var app = (0, _express["default"])();
 app.use((0, _morgan["default"])('dev'));

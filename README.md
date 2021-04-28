@@ -9,7 +9,7 @@ service for crocodilo-bot
 `npm start` script now serves the content of the `build/` folder instead of the `src/` folder. This is the script you’ll use when we serve the file in production.
 
 # Needs Work
-Currently our file imports need the `.js` extension because of how ES6 works. If someone would like to fix this, it would be much appreciated. 
+Currently our file imports need the `.js` extension because of how ES6 works. If someone would like to look into this, would be much appreciated. Our workflow might be a little scuffed right now, but it is alright. 
 
 # Resources
 Boilerplate code was set up using this tutorial, please take a look to get familiarized with setup:
