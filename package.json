@@ -27,6 +27,8 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "nodemon": "^2.0.7",
-    "prettier": "^2.2.1"
+    "pg": "^8.6.0",
+    "prettier": "^2.2.1",
+    "sequelize": "^6.6.2"
   }
 }
