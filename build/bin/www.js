@@ -3,15 +3,15 @@
 /**
  * Module dependencies.
  */
-"use strict";
+'use strict';
 
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
 
-var _debug = _interopRequireDefault(require("debug"));
+var _debug = _interopRequireDefault(require('debug'));
 
-var _http = _interopRequireDefault(require("http"));
+var _http = _interopRequireDefault(require('http'));
 
-var _app = _interopRequireDefault(require("../app.js"));
+var _app = _interopRequireDefault(require('../app.js'));
 
 /**
  * Normalize a port into a number, string, or false.
@@ -35,36 +35,34 @@ var normalizePort = function normalizePort(val) {
  * Get port from environment and store in Express.
  */
 
-
 var port = normalizePort(process.env.PORT || '3000');
 
-_app["default"].set('port', port);
+_app['default'].set('port', port);
 /**
  * Create HTTP server.
  */
 
-
-var server = _http["default"].createServer(_app["default"]);
+var server = _http['default'].createServer(_app['default']);
 /**
  * Event listener for HTTP server "error" event.
  */
-
 
 var onError = function onError(error) {
   if (error.syscall !== 'listen') {
     throw error;
   }
 
-  var bind = typeof port === 'string' ? "Pipe ".concat(port) : "Port ".concat(port); // handle specific listen errors with friendly messages
+  var bind =
+    typeof port === 'string' ? 'Pipe '.concat(port) : 'Port '.concat(port); // handle specific listen errors with friendly messages
 
   switch (error.code) {
     case 'EACCES':
-      alert("".concat(bind, " requires elevated privileges"));
+      alert(''.concat(bind, ' requires elevated privileges'));
       process.exit(1);
       break;
 
     case 'EADDRINUSE':
-      alert("".concat(bind, " is already in use"));
+      alert(''.concat(bind, ' is already in use'));
       process.exit(1);
       break;
 
@@ -76,16 +74,15 @@ var onError = function onError(error) {
  * Event listener for HTTP server "listening" event.
  */
 
-
 var onListening = function onListening() {
   var addr = server.address();
-  var bind = typeof addr === 'string' ? "pipe ".concat(addr) : "port ".concat(addr.port);
-  (0, _debug["default"])("Listening on ".concat(bind));
+  var bind =
+    typeof addr === 'string' ? 'pipe '.concat(addr) : 'port '.concat(addr.port);
+  (0, _debug['default'])('Listening on '.concat(bind));
 };
 /**
  * Listen on provided port, on all network interfaces.
  */
-
 
 server.listen(port);
 server.on('error', onError);

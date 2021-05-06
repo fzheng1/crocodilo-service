@@ -1,20 +1,20 @@
-"use strict";
+'use strict';
 
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
+Object.defineProperty(exports, '__esModule', {
+  value: true,
 });
-exports["default"] = void 0;
+exports['default'] = void 0;
 
-var _express = _interopRequireDefault(require("express"));
+var _express = _interopRequireDefault(require('express'));
 
-var indexRouter = _express["default"].Router();
+var indexRouter = _express['default'].Router();
 
 indexRouter.get('/', function (req, res) {
   return res.status(200).json({
-    message: 'Welcome to Express API template'
+    message: 'Welcome to Express API template',
   });
 });
 var _default = indexRouter;
-exports["default"] = _default;
+exports['default'] = _default;

@@ -8,7 +8,8 @@
     "dev": "nodemon --exec babel-node ./src/bin/www",
     "lint": "./node_modules/.bin/eslint ./src",
     "pretty": "prettier --write '**/*.{js,json}' '!node_modules/**'",
-    "postpretty": "npm run lint --fix"
+    "postpretty": "npm run lint --fix",
+    "migrate": "node-pg-migrate up --config-file='./config/default.json'"
   },
   "dependencies": {
     "@babel/cli": "^7.13.16",
@@ -18,6 +19,7 @@
     "@babel/preset-env": "^7.13.15",
     "@babel/register": "^7.13.16",
     "@babel/runtime": "^7.13.17",
+    "config": "^3.3.6",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "eslint": "^7.25.0",
